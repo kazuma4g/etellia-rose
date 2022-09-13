@@ -245,12 +245,12 @@ button{
 }
 
 .concept-img{
-    width: 98%;
+    width: 80%;
     aspect-ratio: 720/541;
     background-size: cover;
     position: absolute;
     top: 10vw;
-    right: 36vw;
+    right: 38vw;
     box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
 }
 
@@ -279,12 +279,13 @@ button{
     .concept-text-parent{
         width: 62%;
         font-size: 1.15vw;
+        transform: translate(40%,0);
     }
     .concept-text-parent span{
         font-size: 1.8vw;
     }
     .concept-img{
         top: 12vw;
-        right: 44vw;
+        right: 46vw;
     }
 }
