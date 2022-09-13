@@ -243,6 +243,13 @@ button{
     font-size: 1vw;
 }
 
+.button-detail:hover{
+    background-color: #dc3e3e;
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+    transform: translateY(-4px);
+    transition: 0.6s;
+}
+
 .concept-img{
     width: 80%;
     aspect-ratio: 720/541;
