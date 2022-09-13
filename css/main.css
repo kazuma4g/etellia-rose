@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/*base
+-----------------------------------------------------------------------------------------*/
+html {
+    font-size: 16px;
+}
+
+body {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Noto Sans JP';
+    color: #2C2A2A;
+}
+
+img,iframe{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+a:hover{
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    cursor: pointer;
+}
+
+section{
+    margin-top: 6rem;
+    width: 77.865%;
+    margin: 10vw auto 0 auto;
+    text-align: center;
+}
+
+/*header
+-----------------------------------------------------------------------------------------*/
+.header.pc{
+    width: 100%;
+    background-color: #DBC9DB;
+    align-items: center;
+    padding: 1.6rem 0 1.6rem 0;
+}
+
+.header-logo{
+    width: 30%;
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'MonteCarlo';
+}
+
+.nav-pc{
+    width: 70%;
+    display: flex;
+}
+
+.menu.pc{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 4rem;
+}
+
+.header-img{
+    width: 100%;
+    aspect-ratio: 1923/640;
+    background-image: url(../img/img_4.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.header-img-filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.header-headline{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%,-50%);
+}
+
+.menu-item.reservation{
+    background: linear-gradient(180deg, rgba(224,178,85,1) 0%, rgb(239, 208, 117) 100%);
+    color: white;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.menu-item.reservation:hover{
+    background: linear-gradient(180deg, rgb(222, 163, 46) 0%, rgb(236, 188, 46)100%);
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+    transition: 0.6s;
+}
+
+.drawer-menu-item.reservation{
+    background: linear-gradient(180deg, rgba(224,178,85,1) 0%, rgb(239, 208, 117) 100%);
+    color: white;
+}
+
+.drawer-menu-item.reservation:hover{
+    background: linear-gradient(180deg, rgb(222, 163, 46) 0%, rgb(236, 188, 46)100%);
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+    transition: 0.6s;
+}
+
+
+@media (min-width:1281px){
+    .header.pc{
+        display: flex;
+    }
+    .fixed-header{
+        display: none;
+    }
+    .menu.pc{
+       font-size: 1.2vw;
+    }
+    
+}
+
+@media (min-width:2000px){
+    .menu.pc{
+        gap: 7rem;
+    }
+    
+}
+
+@media (max-width:1280px){
+    .header.pc{
+        display: none;
+    }
+    .fixed-header{
+        display: flex;
+    }
+}
+
+/*main
+-----------------------------------------------------------------------------------------*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+/*concept
+-----------------------------------------------------------------------------------------*/
+.concept{
+    display: flex;
+    flex-direction: column;
+}
+
+.title span{
+    font-family: 'MonteCarlo';
+    font-size: 5.5vw;
+}
+
+.title.concept{
+    font-family: 'Noto Serif JP';
+    font-size: 1.8vw;
+}
+
+.concept-text-parent{
+    width: 52%;
+    font-family: 'Noto Serif JP';
+    font-size: 0.83vw;
+    margin: 1vw auto 0 auto;
+    background-color: #FFE7E94A;
+    padding-top: 5vw;
+    transform: translate(45%,0);
+}
+
+.concept-text-parent span{
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.concept-text1{
+    margin-top: 3vw;
+    padding: 0 9vw 0 9vw;
+    color: #6A6666;
+    text-align: left;
+}
+
+@media (min-width:1281px){
+    .title span{
+        font-size: 4.2rem;
+    }
+    .title.concept{
+        font-size: 1.3rem;
+    }
+}
