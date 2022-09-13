@@ -194,10 +194,11 @@ button{
 
 .background-img1{
     position: absolute;
-    top: -25vw;
+    top: -35vw;
     left: -50vw;
     width: 100%;
     background-size: cover;
+    z-index:-1;
 }
 
 .title span{
@@ -276,13 +277,14 @@ button{
         font-size: 2vw;
     }
     .concept-text-parent{
-        font-size: 1.2vw;
+        width: 62%;
+        font-size: 1.15vw;
     }
     .concept-text-parent span{
         font-size: 1.8vw;
     }
     .concept-img{
-        top: 16vw;
-        right: 38vw;
+        top: 12vw;
+        right: 44vw;
     }
 }
