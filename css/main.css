@@ -456,6 +456,9 @@ button{
 }
 
 @media (max-width:500px){
+    .chosen{
+        margin-top: 6vw;
+    }
     .chosen.rectangle-img{
         width: 40%;
         aspect-ratio: 302/312;
