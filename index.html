@@ -35,6 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 </head>
 <body class="drawer drawer--right" role="document">
+  <!-- Header PC-->
     <header class="header pc" role="banner">
         <h1 class="header-logo" role="heading">
             Rose
@@ -57,6 +58,7 @@
           <img class="header-headline" src="./img/headline.png" alt="Roseのように美しく輝ける姿へ ほうれい線・たるみ専門プライベートフェイシャルエステ">
         </h2>
       </div>
+      <!-- Header Tablet and Smartphone-->
       <div class="fixed-header">
         <button type="button" class="drawer-toggle drawer-hamburger" role="button">
           <span class="sr-only">toggle navigation</span>
@@ -75,8 +77,10 @@
       </div>
     </div>
    
+    <!-- Main -->
     <main class="main-content" role="main">
-      <section class="concept">
+      <!-- Concept PC-->
+      <section class="concept pc">
         <img class="background-img1" role="image" src="./img/background2.png" alt="rose background image"></img>
         <h3 class="title concept" role="heading">
           <span>Concept</span>
@@ -92,8 +96,42 @@
           <img class="concept-img" role="image" src="./img/concept-img.png"></img>
         </div>
       </section>
+      <!-- Concept SmartPhone-->
+      <section class="concept smartphone">
+        <img class="background-img1" role="image" src="./img/background2.png" alt="rose background image"></img>
+        <h3 class="title concept" role="heading">
+          <span>Concept</span>
+          Roseについて
+        </h3>
+        <div class="concept-text-parent-smartphone" role="text">
+          <span>薔薇のように美しく輝けることを届けたい</span><br>
+          <div class="concept-text1" role="text">
+            そんな想いでお客様お一人お一人の肌質や体質に沿ったお悩み、お客様のニーズに合わせてオンリーワンのメニューをご提案させていただきます。<br><br>
+            専門的な知識と高い技術を習得した熟練エステティシャンが心地良い空間で至福の美容タイムをお届けいたします。
+          </div>
+          <button class="button-detail" role="button" type="button">詳しくはこちら</button>
+        </div>
+        <img class="concept-img-smartphone" role="image" src="./img/concept-img.png"></img>
+      </section>
+      <!-- Reason why chosen -->
       <section class="chosen">
-
+        <div class="chosen rectangle-img" role="image">
+          <h3 class="title chosen" role="heading">
+            <nobr>Roseが選ばれる理由</nobr>
+          </h3>
+          <img class="chosen-mask-img" role="image" src="./img/mask_group.png"></img>
+        </div>
+        <div class="chosen-reasons-parent" role="text">
+          <img class="chosen-reason-i img1" role="image" src="./img/ellipse.png">
+            <div class="chosen-reason-t text1" role="text">
+              <span>熟練のエステティシャンが施術</span><br><br>
+              施術歴12年のベテランエステティシャンがお<br>悩みを一緒に解決していきます。<br>
+              サロンケアだけでなく、豊富な専門知識で<br>ホームケアもアドバイスさせていただきます。
+            </div>
+          </img>
+          <img class="chosen-reason-i img2" role="image" src="./img/ellipse.png"></img>
+          <img class="chosen-reason-i img3" role="image" src="./img/ellipse.png"></img>
+        </div>
       </section>
     </main>
 

@@ -56,7 +56,6 @@ li{
 }
 
 section{
-    margin-top: 6rem;
     width: 77.865%;
     margin: 10vw auto 0 auto;
     text-align: center;
@@ -275,6 +274,49 @@ button{
     }
 }
 
+@media (max-width:500px){
+    .concept.pc{
+        display: none;
+    }
+    .concept.smartphone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .concept-text-parent-smartphone{
+        width: 80%;
+        font-family: 'Noto Serif JP';
+        font-size: 2.7vw;
+        background-color: #FFE7E94A;
+        padding: 6vw 0 5vw 0;
+        margin-top: 6vw;
+    }
+    .concept-img-smartphone{
+        width: 80%;
+        aspect-ratio: 720/541;
+        background-size: cover;
+        box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+    }
+    .concept-text-parent-smartphone span{
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    .button-detail{
+        margin-top: 6vw;
+        background-color: #D97474;
+        color: white;
+        border-radius: 50px;
+        padding: 0.5vw 2vw 0.5vw 2vw;
+        box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+        font-size: 3vw;
+    }
+    br{
+        display: block;
+        content: "";
+        padding: 0.8vw 0;
+    }
+}
+
 @media (max-width:820px){
     .title span{
         font-size: 6vw;
@@ -296,5 +338,90 @@ button{
     }
 }
 
+@media (min-width:501px){
+    .concept.pc{
+        display: flex;
+    }
+    .concept.smartphone{
+        display: none;
+    }
+}
+
+
+
 /*chosen
 -----------------------------------------------------------------------------------------*/
+.chosen{
+    display: flex;
+    flex-direction: column;
+    margin-top: 9vw;
+}
+
+.chosen.rectangle-img{
+    width: 27%;
+    aspect-ratio: 302/312;
+    position: relative;
+    background-image: url('../img/rectangle1.png');
+    background-size: cover;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.title.chosen{
+    font-family: 'Noto Serif JP';
+    position: absolute;
+    font-size: 2.6vw;
+    color: #434040;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%,0%);
+}
+
+.chosen-mask-img{
+    width: 140%;
+    aspect-ratio: 10/1;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top:  68%;
+    transform: translate(-50%,-50%);
+}
+
+.chosen-reasons-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chosen-reason-i{
+    width: 22%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+}
+
+.chosen-reason-i.img1{
+    margin-top: -36vw;
+    position: relative;
+}
+
+.chosen-reason-i.img3{
+    margin-bottom: -36vw;
+}
+
+.chosen-reason-t span{
+    font-weight: bold;
+    font-size: 1.4vw;
+    font-family: 'Noto Serif JP';
+    color: #2C2A2A;
+}
+
+.chosen-reason-t.text1{
+    font-size: 0.85vw;
+    position: absolute;
+    margin-top: -36vw;
+    text-align: left;
+    transform: translate(40%,0);
+    font-family: 'Noto Sans JP';
+    color: #6A6767;
+}
