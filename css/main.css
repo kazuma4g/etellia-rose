@@ -587,3 +587,10 @@ button{
 .menu-card-parent{
     margin-top: 4vw;
 }
+
+@media (max-width:1280px){
+    .title.menu{
+        font-family: 'Noto Serif JP';
+        font-size: 2vw;
+    }
+}
