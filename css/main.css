@@ -586,11 +586,63 @@ button{
 
 .menu-card-parent{
     margin-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+}
+
+.card-title{
+    font-family: 'Noto Serif JP';
+    margin-top: 2vw;
+    color: #514646;
+    font-size: 1.4vw;
+}
+
+.card-text{
+    font-family: 'Noto Sans JP';
+    font-size: 1.1vw;
+    color: #938A8A;
+    margin: 2.5vw auto 3vw auto;
+    text-align: left;
 }
 
 @media (max-width:1280px){
     .title.menu{
         font-family: 'Noto Serif JP';
         font-size: 2vw;
+    }
+}
+
+@media (max-width:500px){
+    .menu-card-parent{
+        flex-direction: column;
+        margin-top: 2vw;
+    }
+    .card{
+        width: 80%;
+        margin-top: 4vw;
+    }
+    .card-title{
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+    .card-text{
+        font-size: 2.7vw;
+    }
+    .card.improvement{
+        padding-bottom: 3vw;
+    }
+    .card.care{
+        margin-top: 8vw;
+    }
+    .card.white{
+        margin-top: 8vw;
     }
 }
