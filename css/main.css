@@ -470,7 +470,7 @@ button{
     .background-img2{
         width: 60%;
         position: absolute;
-        transform: translate(90%, 100%)
+        transform: translate(90%, 300%)
     }
 
     .chosen.rectangle-img{
