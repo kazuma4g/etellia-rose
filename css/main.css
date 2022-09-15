@@ -204,7 +204,7 @@ button{
     font-size: 4vw;
 }
 
-.title.concept{
+.title{
     font-family: 'Noto Serif JP';
     font-size: 1.2vw;
 }
@@ -263,7 +263,7 @@ button{
     .title span{
         font-size: 3vw;
     }
-    .title.concept{
+    .title{
         font-size: 0.8vw;
     }
     .concept-text-parent span{
@@ -321,7 +321,7 @@ button{
     .title span{
         font-size: 6vw;
     }  
-    .title.concept{
+    .title{
         font-size: 2vw;
     }
     .concept-text-parent{
@@ -354,6 +354,13 @@ button{
     display: flex;
     flex-direction: column;
     margin-top: 9vw;
+    position: relative;
+}
+
+.background-img2{
+    width: 60%;
+    position: absolute;
+    transform: translate(-30%, 80%)
 }
 
 .chosen.rectangle-img{
@@ -459,6 +466,13 @@ button{
     .chosen{
         margin-top: 6vw;
     }
+
+    .background-img2{
+        width: 60%;
+        position: absolute;
+        transform: translate(90%, 100%)
+    }
+
     .chosen.rectangle-img{
         width: 40%;
         aspect-ratio: 302/312;
@@ -555,4 +569,21 @@ button{
         font-family: 'Noto Sans JP';
         color: #6A6767;
     }
+}
+
+/*menu
+-----------------------------------------------------------------------------------------*/
+.salon-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title.menu{
+    font-family: 'Noto Serif JP';
+    font-size: 1.2vw;
+}
+
+.menu-card-parent{
+    margin-top: 4vw;
 }
