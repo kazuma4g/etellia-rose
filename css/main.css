@@ -57,7 +57,7 @@ li{
 
 section{
     width: 77.865%;
-    margin: 10vw auto 0 auto;
+    margin: 10vw auto 5vw auto;
     text-align: center;
 }
 
@@ -227,13 +227,13 @@ button{
 
 .concept-text1{
     margin-top: 3vw;
-    padding: 0 9vw 0 9vw;
+    padding: 0 12vw 0 12vw;
     color: #6A6666;
     text-align: left;
 }
 
 .button-detail{
-    margin-top: 4vw;
+    margin-top: 3vw;
     background-color: #D97474;
     color: white;
     border-radius: 50px;
@@ -309,6 +309,7 @@ button{
         padding: 0.5vw 2vw 0.5vw 2vw;
         box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
         font-size: 3vw;
+        margin: 6vw auto 0 auto;
     }
     .concept.smartphone br{
         display: block;
@@ -579,6 +580,16 @@ button{
     position: relative;
 }
 
+.background-image.menu{
+    position: absolute;
+    background-size: cover;
+    width:45%;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 20%)
+}
+
 .title.menu{
     font-family: 'Noto Serif JP';
     font-size: 1.2vw;
@@ -596,6 +607,7 @@ button{
     flex-direction: column;
     width: 30%;
     box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+    background-color: white;
 }
 
 .card-title{
@@ -611,6 +623,20 @@ button{
     color: #938A8A;
     margin: 2.5vw auto 3vw auto;
     text-align: left;
+}
+
+.menu-text{
+    font-family: 'Noto Sans JP';
+    margin-top: 6vw;
+    width: 35%;
+    font-size: 1vw;
+    margin: 6vw auto 0 auto;
+}
+
+.button-detail.menu{
+    width: 18%;
+    margin: 4vw auto 0 auto;
+    padding: 1vw 1vw 1vw 1vw;
 }
 
 @media (max-width:1280px){
@@ -644,5 +670,15 @@ button{
     }
     .card.white{
         margin-top: 8vw;
+    }
+    .menu-text{
+        font-size: 2.4vw;
+        width: 80%;
+        margin: 8vw auto 0 auto;
+    }
+    .button-detail.menu{
+        width: 40%;
+        margin: 6vw auto 0 auto;
+        padding: 1vw 1vw 1vw 1vw;
     }
 }
