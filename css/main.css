@@ -699,3 +699,25 @@ button{
     padding: 4vw 0 4vw 0 ;
     background-color:rgba(254, 217, 217, 0.48);
 }
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    font-family: 'Noto Sans JP';
+    font-size: 0.8vw;
+    align-items: center;
+}
+
+.news-item{
+    width: 35%;
+    border-bottom: 1px solid #938A8A;
+    padding:0 0 0.5vw 5vw;
+    margin: 2vw 0 0 0;
+    text-align: left;
+}
+
+.news-item span {
+    font-size: 1.2vw;
+    margin-right: 8vw;
+}
